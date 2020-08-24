@@ -10,9 +10,9 @@
     <meta name="description"
         content="Flexistonの个人主页 | 我是一名初中生，喜欢编码的咸鱼一条">
     <meta name="keywords" content="Flexiston,Flexistonの个人主页,主页,前端">
-    <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
-    <link rel="stylesheet" type="text/css" href="./css/nutssss.css">
-    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Flexiston/homepage@master/css/FiraCode.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Flexiston/homepage@master/css/nutssss.css">
+    <link rel="shortcut icon" href="./favicon.ico">
 </head>
 
 <body>
@@ -73,7 +73,7 @@
                     <p>即使前方的路看似绝境，也要有硬生生给自己开出一条路的勇气</p>
                     <span style="color: rgb(0, 190, 0);">root@flexiston</span>
                     <span style="color: blue;">~</span>
-                    <span style="color: rgb(39, 39, 39);">sudo rm -rf ~/过去的自己/*</span>
+                    <span style="color: rgb(39, 39, 39);">sudo rm -rf /过去的自己/*</span>
                     <p>bash: 已删除</p>
                     <span style="color: rgb(0, 190, 0);">root@flexiston</span>
                     <span style="color: blue;">~</span>
@@ -106,10 +106,12 @@
                     </ul>
                     <span style="color: rgb(0, 190, 0);">root@flexiston</span>
                     <span style="color: blue;">~</span>
-                    <span style="color: rgb(39, 39, 39);">php ./yiyan.php</span>
+                    <span style="color: rgb(39, 39, 39);">./yiyan.sh</span>
                     <p class="hito">恰沐春风共同游，终只叹，木已舟。</p>
                     <span style="color: rgb(0, 190, 0);">root@flexiston</span>
                     <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./ip.sh</span>
+                    <p class="getip"></p>
                 </div>
             </div>
         </div>
@@ -120,6 +122,10 @@
         <p>© 2020 By Flexiston🎉</p>
     </div>
     <script src="https://v1.hitokoto.cn/?encode=js&select=.hito" defer></script>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script type="text/javascript">
+        (function getip(){var ip="你的 IP: "+returnCitySN["cip"];var ele=document.querySelector('.getip');Array.isArray(ele)?ele[0].innerText=ip:ele.innerText=ip;})()
+    </script>
 </body>
 
 </html>
