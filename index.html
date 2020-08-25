@@ -123,7 +123,7 @@
     <script src="https://v1.hitokoto.cn/?encode=js&select=.hito" defer></script>
     <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
     <script type="text/javascript">
-        (function getip(){var ip="你的 IP: "+returnCitySN["cip"];var ele=document.querySelector('.getip');Array.isArray(ele)?ele[0].innerText=ip:ele.innerText=ip;})()
+        (function getip(selector){var ip="你的 IP: "+returnCitySN["cip"];var ele=document.querySelector(selector);Array.isArray(ele)?ele[0].innerText=ip:ele.innerText=ip;})('.getip')
     </script>
 </body>
 
