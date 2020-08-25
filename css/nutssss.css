@@ -275,8 +275,8 @@ body {
     color: white;
     float: left;
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     margin-bottom: 30px;
     /* background-color: blue; */
 }
