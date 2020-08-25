@@ -275,11 +275,20 @@ body {
     color: white;
     float: left;
     text-align: center;
-    /* position: fixed;
-    bottom: 0; */
-    margin-bottom: 30px;
+    position: fixed;
+    bottom: 0;
+    padding: 2em 0;
     /* background-color: blue; */
 }
+
+@media screen and (max-height: 650px) and (min-width: 1110px)
+{
+    #footer {
+        background-color: rgba(255,255,255,.5);
+        color: #464646;
+    }
+}
+
 
 #footer a {
     text-decoration: none;
@@ -324,6 +333,11 @@ body {
     #cmdBox {
         float: none;
         margin: 0 auto 100px;
+    }
+
+    #footer {
+        background-color: rgba(255,255,255,.5);
+        color: #464646;
     }
 }
 
