@@ -281,6 +281,11 @@ body {
     /* background-color: blue; */
 }
 
+#footer:hover {
+    background-color: rgba(255,255,255,.5);
+    color: #464646;
+}
+
 @media screen and (max-height: 650px) and (min-width: 1110px)
 {
     #footer {
