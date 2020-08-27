@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background-image: linear-gradient(to left, rgba(255, 0, 149, 0.2), rgba(0, 247, 255, 0.2)), url(../img/banner.jpg);
     background-repeat: no-repeat;
@@ -12,7 +17,7 @@ body {
 
 #box {
     /* background-color: red; */
-    width: 100%;
+    width: 1200px;
     height: 100px;
     margin: 0 auto;
     padding-top: 5%;
@@ -24,7 +29,6 @@ body {
     height: 25rem;
     background-color: white;
     margin-top: 100px;
-    margin-left: 10%;
     border-radius: 2%;
     transition: all 0.3s;
     text-align: center;
@@ -33,7 +37,8 @@ body {
 .meBox:hover {
     width: 21rem;
     height: 26rem;
-    margin: 95px 0 0 9.5%;
+    margin: 95px 0 0 -5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .headPhoto {
@@ -162,7 +167,6 @@ body {
     width: 710px;
     height: 550px;
     float: right;
-    margin-right: 5%;
     /* background-color: green; */
 }
 
@@ -294,7 +298,6 @@ body {
     }
 }
 
-
 #footer a {
     text-decoration: none;
     color: white;
@@ -305,8 +308,11 @@ body {
 }
 
 /* 自适应 */
-@media screen and (max-width: 1250px)
-{
+@media screen and (max-width: 1250px) {
+    #box {
+        width: 100%;
+    }
+
     .meBox {
         margin-left: 3%;
     }
@@ -322,32 +328,47 @@ body {
     }
 }
 
-@media screen and (max-width: 1110px)
-{
+@media screen and (max-width: 1120px) {
     .meBox {
         float: none;
         margin: 100px auto 100px;
     }
 
     .meBox:hover {
-        width: 21rem;
-        height: 26rem;
-        margin: 95px auto 95px;
+        width: 20rem;
+        height: 25rem;
+        margin: 105px auto 100px;
+    }
+
+    .meBox:hover .meBox-Button a {
+        width: 158px;
+        height: 50px;
+        margin-top: 13px;
+    }
+
+    .meBox:hover .meBox-title p {
+        font-size: 1.2rem;
+    }
+
+    .meBox:hover .headPhoto {
+        width: 8rem;
+        height: 8rem;
+        margin: -0.5rem 0 0 -4rem;
+        transform: rotate(360deg);
     }
 
     #cmdBox {
         float: none;
         margin: 0 auto 100px;
     }
-
+    
     #footer {
         background-color: rgba(255,255,255,.5);
         color: #464646;
     }
 }
 
-@media screen and (max-width: 768px)
-{
+@media screen and (max-width: 768px) {
     .meBox {
         width: 300px;
     }
@@ -361,10 +382,10 @@ body {
     .meBox-Button a:hover {
         color: rgb(0, 132, 255);
     }
-    
+
     .meBox:hover .meBox-Button a {
         width: 150px;
-        margin-top: 0;
+        margin-top: 13px;
     }
 
     .meBox:hover .meBox-title p {
