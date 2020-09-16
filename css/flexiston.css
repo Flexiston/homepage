@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-image: linear-gradient(to left, rgba(255, 0, 149, 0.2), rgba(0, 247, 255, 0.2)), url(../img/banner.jpg);
+    background-image: linear-gradient(to left, rgba(255, 0, 149, 0.2), rgba(0, 247, 255, 0.2)), url(../img/banner2.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
